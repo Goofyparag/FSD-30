@@ -8,7 +8,7 @@ document.getElementById("weatherForm").addEventListener("submit", async e => {
     }
 
     try {
-        // 1️⃣ Get latitude & longitude
+        
         const geoRes = await fetch(
             `https://geocoding-api.open-meteo.com/v1/search?name=${city}&count=1`
         );
@@ -21,7 +21,7 @@ document.getElementById("weatherForm").addEventListener("submit", async e => {
 
         const { latitude, longitude, name } = geoData.results[0];
 
-        // 2️⃣ Get weather
+  
         const weatherRes = await fetch(
             `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true`
         );
