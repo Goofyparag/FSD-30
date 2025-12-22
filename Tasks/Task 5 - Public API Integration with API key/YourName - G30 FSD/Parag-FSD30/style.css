@@ -91,7 +91,7 @@ button:hover {
     opacity: 0.8;
 }
 
-/* Dynamic backgrounds */
+
 body.sunny { background: linear-gradient(160deg, #ffb703, #fb8500); }
 body.cloudy { background: linear-gradient(160deg, #6c757d, #adb5bd); }
 body.rainy { background: linear-gradient(160deg, #03045e, #0077b6); }
